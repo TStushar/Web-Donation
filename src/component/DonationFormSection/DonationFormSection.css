@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.left-container,
+.right-container {
+    flex: 1;
+    margin: 35px;
+    min-width: 280px;
+}
+
+.responsive-image {
+    max-width: 10px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.left-container h2,
+.right-container h2 {
+    margin: 50px;
+}
+
+.left-container {
+    Display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(164, 174, 177);
+    border: solid 1px black;
+}
+
+#donate-left-img {
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+    width: 95%;
+    height: auto;
+}
+
+.left-container p {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.right-container {
+    width: 100%;
+    Display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px rgb(164, 174, 177);
+    border: solid 1px black;
+    background-color: rgb(5, 24, 50);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea,
+form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#donate-form-submit-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container,
+    .right-container {
+        margin: 0 0 20px 0;
+    }
+}

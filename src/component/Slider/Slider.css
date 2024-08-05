@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: auto;
+    height: 65vw;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    z-index: -1;
+}
+
+.slider-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 500%;
+    /* 100% * number of images */
+}
+
+.slide {
+    min-width: 90vw;
+    flex: 1 0 100%;
+}
+
+.slide img {
+    width: 100vw;
+    height: auto;
+    display: block;
+    background-size: cover;
+}
