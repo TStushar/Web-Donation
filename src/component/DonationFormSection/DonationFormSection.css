@@ -37,6 +37,7 @@ body {
 .right-container h2 {
     margin: 50px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .left-container {

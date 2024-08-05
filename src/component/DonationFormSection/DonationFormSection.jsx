@@ -58,7 +58,7 @@ function DonationFormSection() {
             class="attachment-full size-full wp-image-25757"
             sizes="(max-width: 802px) 100vw, 802px"
           />
-          <h2>In Everyone's Heart For Sure </h2>
+          <h2>In Everyone's Heart </h2>
           <p>
             Janmashtami is a cherished celebration marking the divine appearance
             of Lord Krishna. As the day unfolds, devotees observe a fast, their
