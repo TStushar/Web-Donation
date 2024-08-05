@@ -99,6 +99,10 @@ form button {
     margin-top: 30px;
 }
 
+.text-black {
+    color: rgb(0, 0, 0);
+}
+
 form button {
     background-color: #007bff;
     color: white;

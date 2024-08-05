@@ -22,8 +22,14 @@ function Footer() {
           </div>
           <div class="footer-section footer-contact">
             <h3>Contact</h3>
-            <p>Phone: +91 1234567890</p>
-            <p>Email: contact@iskconnvcc.com</p>
+            <p>
+              <a href="tel:+89757 65947">Phone: +91 89757 65947</a>
+            </p>
+            <p>
+              <a href="mailto:haripriyaseva@gmail.com">
+                Email: haripriyaseva@gmail.com
+              </a>
+            </p>
           </div>
         </div>
       </footer>

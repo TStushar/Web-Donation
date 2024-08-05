@@ -46,7 +46,7 @@ function DonationFormSection() {
       <Quotes></Quotes>
       <Card></Card>
 
-      <div class="main-container1" ref={ref}>
+      <div class="main-container1">
         <div class="left-container">
           <img
             id="donate-left-img"
@@ -75,7 +75,7 @@ function DonationFormSection() {
             teachings.s{" "}
           </p>
         </div>
-        <div className="right-container">
+        <div className="right-container" ref={ref}>
           <h2>Please fill the details</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="name">Name:</label>
@@ -92,6 +92,7 @@ function DonationFormSection() {
             <input
               type="number"
               id="age"
+              className="text-black"
               {...register("age", { required: "Age is required", min: 1 })}
             />
             {errors.age && <p style={{ color: "red" }}>{errors.dob.message}</p>}
@@ -132,6 +133,7 @@ function DonationFormSection() {
             <input
               type="date"
               id="dob"
+              className="text-black"
               {...register("dob", { required: "Date of Birth is required" })}
             />
             {errors.dob && <p style={{ color: "red" }}>{errors.dob.message}</p>}
@@ -139,6 +141,7 @@ function DonationFormSection() {
             <label htmlFor="address">Address:</label>
             <textarea
               id="address"
+              className="text-black"
               rows="4"
               {...register("address", { required: "Address is required" })}
             />
@@ -172,7 +175,9 @@ function DonationFormSection() {
             )}
 
             <div id="donate-form-submit-btn">
-              <button type="submit">Submit</button>
+              <button type="submit">
+                <a href="https://pages.razorpay.com/eatsease">Submit</a>{" "}
+              </button>
             </div>
           </form>
         </div>
