@@ -5,7 +5,7 @@ function Card() {
   return (
     <>
       <div class="card-container">
-        <h2 class="card-title">How ISKCON NVCC</h2>
+        <h2 class="card-title">How ISKCON Govindh Dham</h2>
         <h2 class="card-title">celebrates Janmashtami?</h2>
         <div class="cards">
           <div className="card-row">

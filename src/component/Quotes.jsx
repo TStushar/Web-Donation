@@ -29,7 +29,7 @@ export default function Quotes() {
 
             {/* content */}
             <div className="flex flex-col gap-4 py-4">
-              <h3 className="text-lg sm:text-xl font-semibold">
+              <h3 className="text-lg sm:text-xl font-semibold ">
                 Bhagavad Gita 2.40
               </h3>
               <p>
