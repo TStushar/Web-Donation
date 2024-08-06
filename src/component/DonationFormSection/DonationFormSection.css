@@ -134,10 +134,17 @@ form button:hover {
     }
 }
 
-@media (max-width : 375px) {
+@media (max-width : 400px) {
 
     .right-container,
     .left-container {
         padding: 5px;
+    }
+
+    .left-container,
+    .right-container {
+        flex: 1;
+        margin: 15px;
+        min-width: 250px;
     }
 }
