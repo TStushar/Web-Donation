@@ -72,11 +72,11 @@ function DonationFormSection() {
             embrace a life of devotion and service. For the ISKCON community,
             this celebration is a heartfelt expression of love and reverence for
             Lord Krishna, deepening their understanding of his timeless
-            teachings.s{" "}
+            teachings.{" "}
           </p>
         </div>
         <div className="right-container" ref={ref}>
-          <h2>Please fill the details</h2>
+          <h2 id="donateNow-form-text"> Donate Now</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <label htmlFor="name">Name:</label>
             <input

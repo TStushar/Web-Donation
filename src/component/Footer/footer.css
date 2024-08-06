@@ -11,7 +11,6 @@ body {
 footer {
     background-color: rgb(0, 47, 111);
     color: white;
-    padding: 20px;
     text-align: center;
     padding: 15px 150px;
 }
@@ -50,5 +49,11 @@ footer {
 @media (max-width: 480px) {
     .footer-section {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    footer {
+        padding: 15px 50px;
     }
 }
