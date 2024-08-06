@@ -1,14 +1,14 @@
 import React from "react";
 import "./DonationFormSection.css";
 import { useForm } from "react-hook-form";
-import Header from "../Header";
 import { useRef } from "react";
-import Footer from "../Footer/Footer";
-import Card from "../Card/Card";
-import Quotes from "../Quotes";
 import logo from "./logo.png";
 import Slider from "../Slider/Slider";
 import krishnaYashodhaMayya from "./donate-form-img.png";
+import Footer from "../Footer/Footer";
+import Card from "../Card/Card";
+import Quotes from "../Quotes";
+import DonationForm from "../DonationForm/DonationForm";
 
 function DonationFormSection() {
   const {
@@ -43,8 +43,6 @@ function DonationFormSection() {
       </div>
 
       <Slider></Slider>
-      <Quotes></Quotes>
-      <Card></Card>
 
       <div class="main-container1">
         <div class="left-container">
@@ -75,114 +73,14 @@ function DonationFormSection() {
             teachings.{" "}
           </p>
         </div>
-        <div className="right-container" ref={ref}>
-          <h2 id="donateNow-form-text"> Donate Now</h2>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              {...register("name", { required: "Name is required" })}
-            />
-            {errors.name && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-
-            <label htmlFor="age">Age:</label>
-            <input
-              type="number"
-              id="age"
-              className="text-black"
-              {...register("age", { required: "Age is required", min: 1 })}
-            />
-            {errors.age && <p style={{ color: "red" }}>{errors.dob.message}</p>}
-
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              {...register("email", {
-                required: "Email is required",
-                pattern: {
-                  value: /^\S+@\S+$/i,
-                  message: "Invalid email address",
-                },
-              })}
-            />
-            {errors.email && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-
-            <label htmlFor="phone">Phone:</label>
-            <input
-              type="tel"
-              id="phone"
-              {...register("phone", {
-                required: "Phone number is required",
-                pattern: {
-                  value: /^[0-9]{10}$/,
-                  message: "Invalid phone number",
-                },
-              })}
-            />
-            {errors.phone && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-
-            <label htmlFor="dob">Date of Birth:</label>
-            <input
-              type="date"
-              id="dob"
-              className="text-black"
-              {...register("dob", { required: "Date of Birth is required" })}
-            />
-            {errors.dob && <p style={{ color: "red" }}>{errors.dob.message}</p>}
-
-            <label htmlFor="address">Address:</label>
-            <textarea
-              id="address"
-              className="text-black"
-              rows="4"
-              {...register("address", { required: "Address is required" })}
-            />
-            {errors.address && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-            <label htmlFor="pincode">Pin Code:</label>
-            <input
-              type="text"
-              id="pincode"
-              {...register("pincode", {
-                required: "Pin Code is required",
-                pattern: {
-                  value: /^[0-9]{6}$/,
-                  message: "Invalid Pin Code",
-                },
-              })}
-            />
-            {errors.pincode && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-
-            <label htmlFor="city">City:</label>
-            <input
-              type="text"
-              id="city"
-              {...register("city", { required: "City is required" })}
-            />
-            {errors.city && (
-              <p style={{ color: "red" }}>{errors.dob.message}</p>
-            )}
-
-            <div id="donate-form-submit-btn">
-              <button type="submit">
-                <a href="https://pages.razorpay.com/eatsease">Submit</a>{" "}
-              </button>
-            </div>
-          </form>
+        <div className="right-container">
+          <DonationForm></DonationForm>
         </div>
       </div>
-      <Footer></Footer>
+
+      {/* <Quotes></Quotes>
+      <Card></Card>
+      <Footer></Footer> */}
     </>
   );
 }

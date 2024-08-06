@@ -33,8 +33,7 @@ body {
     border-radius: 8px;
 }
 
-.left-container h2,
-.right-container h2 {
+.left-container h2 {
     margin: 50px;
     font-weight: bolder;
     text-align: center;
@@ -73,15 +72,18 @@ body {
 .right-container {
     width: 100%;
     Display: flex;
-    flex-direction: column;
+    /* flex-direction: column;
+     */
+    justify-content: center;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 10px 10px 5px rgb(164, 174, 177);
-    border: solid 1px black;
-    background-color: rgb(5, 24, 50);
+    border: solid 1px #0b1b2b;
+    background-color: #0b1b2b;
     color: white;
 }
 
+/* 
 form {
     display: flex;
     flex-direction: column;
@@ -120,7 +122,7 @@ form button {
 
 form button:hover {
     background-color: #0056b3;
-}
+} */
 
 @media (max-width: 768px) {
     .main-container {

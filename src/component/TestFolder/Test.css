@@ -1,0 +1,70 @@
+.container {
+    background-color: #0b1b2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.donation-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.donation-amounts button {
+    background-color: #1b2838;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.donation-amounts button:hover {
+    background-color: #3b4f6b;
+}
+
+.personal-info,
+.billing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

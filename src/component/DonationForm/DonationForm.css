@@ -1,0 +1,115 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #0b1b2b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.container {
+    background-color: #0b1b2b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container span {
+    text-align: center;
+    margin: 35px;
+    font-size: 25px;
+    border: 2px white solid;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.donation-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.donation-amounts button {
+    background-color: #1b2838;
+    color: white;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.donation-amounts button:hover {
+    background-color: #3b4f6b;
+}
+
+.InputRow {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputField {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputField {
+    margin-bottom: 20px;
+}
+
+.inputField input {
+    width: 275px;
+}
+
+.personal-info,
+.billing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input,
+select {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    height: 38px;
+    font-size: 20px;
+}
+
+
+.total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
