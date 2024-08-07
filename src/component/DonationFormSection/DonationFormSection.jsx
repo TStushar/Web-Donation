@@ -73,14 +73,14 @@ function DonationFormSection() {
             teachings.{" "}
           </p>
         </div>
-        <div className="right-container">
+        <div className="right-container" ref={ref}>
           <DonationForm></DonationForm>
         </div>
       </div>
 
-      {/* <Quotes></Quotes>
+      <Quotes></Quotes>
       <Card></Card>
-      <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 }

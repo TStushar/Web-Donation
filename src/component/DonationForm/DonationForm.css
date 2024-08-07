@@ -11,8 +11,8 @@
 
 .container {
     background-color: #0b1b2b;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,25 +41,35 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* border: 1px solid red; */
     gap: 10px;
 }
 
 .donation-amounts button {
     background-color: #1b2838;
-    color: white;
-    padding: 10px 35px;
-    border: none;
+    color: black;
+    background: white;
+    width: 160px;
+    padding: 7px 20px;
+    border: 1px solid white;
     border-radius: 50px;
     cursor: pointer;
+    font-size: 15px;
+
 }
 
-.donation-amounts button:hover {
-    background-color: #3b4f6b;
+.donation-amounts button:checked+.toggle-label {
+    background-color: #fb7406;
 }
+
+/* .donation-amounts button:hover {
+    background-color: #3b4f6b;
+} */
 
 .InputRow {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0px 5px;
 }
 
 .inputField {
@@ -72,8 +82,15 @@ h3 {
     margin-bottom: 20px;
 }
 
+.inputField label {
+    font-size: 14px;
+
+}
+
 .inputField input {
-    width: 275px;
+    min-width: 245px;
+    padding: 22px 14px;
+    font-size: 14px;
 }
 
 .personal-info,
@@ -82,6 +99,15 @@ h3 {
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
+}
+
+.personal-info h3,
+.billing-details h3 {
+    text-align: left;
+    display: flex;
+    font-size: larger;
+    font-weight: 600;
+    margin: 10px;
 }
 
 input,
@@ -95,21 +121,44 @@ select {
 
 
 .total {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total p {
+    text-align: left;
+    display: flex;
+    font-size: larger;
+    font-weight: 600;
+    margin: 10px;
 }
 
 button[type="submit"] {
     background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 11px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-weight: bolder;
 }
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+
+
+@media (max-width : 400px) {
+    .InputRow {
+        flex-direction: column;
+    }
+
+    .donation-amounts button {
+        max-width: 320px;
+    }
 }

@@ -34,7 +34,7 @@ function Footer() {
         </div>
       </footer>
       <div class="footer-bottom">
-        <p>Copyright © 2024 ISKCON NVCC. All Rights Reserved.</p>
+        <p>Copyright © 2024 ISKCON Govindh Dham. All Rights Reserved.</p>
       </div>
     </>
   );

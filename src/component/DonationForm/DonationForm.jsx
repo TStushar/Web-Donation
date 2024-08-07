@@ -138,8 +138,8 @@ const DonationForm = () => {
         </div>
         <div className="total">
           <p>Donation Total: ₹20,001.00</p>
+          <button type="submit">Donate Now</button>
         </div>
-        <button type="submit">Donate Now</button>
       </form>
     </div>
   );
