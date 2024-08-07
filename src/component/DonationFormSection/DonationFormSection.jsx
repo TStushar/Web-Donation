@@ -43,6 +43,7 @@ function DonationFormSection() {
       </div>
 
       <Slider></Slider>
+      <Quotes></Quotes>
 
       <div class="main-container1">
         <div class="left-container">
@@ -78,7 +79,6 @@ function DonationFormSection() {
         </div>
       </div>
 
-      <Quotes></Quotes>
       <Card></Card>
       <Footer></Footer>
     </>
